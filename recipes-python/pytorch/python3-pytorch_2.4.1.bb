@@ -293,7 +293,7 @@ RDEPENDS:${PN}:class-target = " \
 	shaderc spirv-tools ${@bb.utils.contains('DISTRO_FEATURES', 'vulkan', 'vulkan-loader', '', d)} \
 	python3-numpy python3-typing-extensions \
 	python3-pyyaml python3-pybind11 \
-	python3-sympy python3-six python3-onnx \
+	python3-sympy python3-six \
 "
 
 INSANE_SKIP:${PN} = "dev-so already-stripped"
